@@ -17,20 +17,18 @@ public class JavaApplication1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int f=1;
+        int f;
         Scanner in = new Scanner(System.in);
         int g = 1;
         int input;
         boolean a = false;
-       
         System.out.println("input :");
-        input = in.nextInt();
-        System.out.print("1");
+        f = in.nextInt();
         System.out.print(" ");
-    for (int i = 2; i <= input; i++) {
-        System.out.print(f + " ");
-        f = f + g;
         g = f - g;
+        f = f + g;
+        System.out.print(f + " ");
+    System.out.println();
     } 
 
     System.out.println();
